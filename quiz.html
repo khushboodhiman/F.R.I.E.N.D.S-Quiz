@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="questions.js"></script>
     <title>F.R.I.E.N.D.S Quiz</title>
 </head>
 <body>
@@ -15,22 +16,21 @@
 <div class="quiz-wrapper">
     <div class="top-img-wrapper"><img src="img/friends-2.jpg" alt="Friends" class="top-img"></div>
     <div class="score-row">
-        <h5 class="question-no">Question 1 of 20</h5>
+        <h5 class="question-no">Question <span class="number"></span> of 20</h5>
         <span class="score-badge">0</span>
     </div>
-    <div class="question">
-        Chandler and Ross were a band while they were at college. Can you remember the band's name?
-    </div>
-    <form action="" class="answers-wrapper">
-        <label class="answer"><input type="radio" name="Flock of Birds"/>Flock of Birds</label>
-        <label class="answer"><input type="radio" name="Wyld Stallyns"/>Wyld Stallyns</label>
-        <label class="answer"><input type="radio" name="Way, No Way"/>Way, No Way</label>
-        <label class="answer"><input type="radio" name="Mosh Bros"/>Mosh Bros</label>
-        <div class="next-wrapper"><input type="submit" value="Next" class="primary-btn next-btn"></div>
+    <div class="question"></div>
+    <form class="answers-wrapper">
+        <label class="answer"><input type="radio" name="answer"/></label>
+        <label class="answer"><input type="radio" name="answer"/></label>
+        <label class="answer"><input type="radio" name="answer"/></label>
+        <label class="answer"><input type="radio" name="answer"/></label>
+        <div class="next-wrapper"><input type="button" value="Next" class="primary-btn next-btn"></div>
     </form>
 </div>
 
 <script src="script.js"></script>
+
 
 </body>
 </html>
