@@ -97,6 +97,19 @@ body {
 .next-btn {
     width: 212px;
     height: 72px;
+    background: linear-gradient(93.2deg, #F5AF19 0%, #F12711 100%);
+    box-shadow: 0px 18px 24px #f5af1940;
+    border: 0;
+    border-radius: 100px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.next-btn:disabled,
+.next-btn[disabled] {
+    background: #DEDEDE!important;
+    box-shadow: none;
 }
 
 .question {
