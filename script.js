@@ -1,3 +1,4 @@
+
 let questionBlock = document.querySelector('.question');
 let optionsBlock = document.querySelectorAll('.answer');
 let questionNumberBlock = document.querySelector('.number');
@@ -72,17 +73,14 @@ function resetEverything() {
 
 
 function checkIfLast(questionNumber) {
-    console.log(questionNumber, maxQuestion);
     if (questionNumber == maxQuestion) {
         document.querySelector('.next-btn').value = "Finish Quiz";
         document.querySelector('.next-btn').classList.add('finish-btn');
         document.querySelector('.finish-btn').onclick = () => {
-            console.log("oye", score, maxQuestion, scoreBlock, maxScoreBlock);
             let resultScoreBlock = document.querySelector('.result-score-badge');
             let resultMaxBlock = document.querySelector('.result-max');
             resultScoreBlock.innerHTML = score;
             resultMaxBlock.innerHTML = maxQuestion;
-            console.log(score, maxQuestion);
             document.querySelector('.quiz-wrapper').style.display = "none";
             document.querySelector('.results').style.display = "flex";
             scoreBlock = document.querySelector('.score-badge');
