@@ -16,8 +16,8 @@
 <div class="quiz-wrapper">
     <div class="top-img-wrapper"><img src="img/friends-2.jpg" alt="Friends" class="top-img"></div>
     <div class="score-row">
-        <h5 class="question-no">Question <span class="number"></span> of 20</h5>
-        <span class="score-badge">0</span>
+        <h5 class="question-no">Question <span class="number"></span> of <span class="max"></span></h5>
+        <span class="score-badge"></span>
     </div>
     <div class="question"></div>
     <form class="answers-wrapper">
@@ -27,6 +27,12 @@
         <label class="answer"><input type="radio" name="answer"/></label>
         <div class="next-wrapper"><input type="button" value="Next" class="next-btn" disabled></div>
     </form>
+</div>
+
+<div class="results">
+    <div class="score">Your Score <span class="result-score-badge"></span> / <span class="result-max"></span></div>
+    <img src="img/win.png" alt="Hurray">
+    <input type="button" class="primary-btn start-btn retake" value="Retake Quiz"/>
 </div>
 
 <script src="script.js"></script>
